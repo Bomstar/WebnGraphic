@@ -19,15 +19,15 @@ export default function ServiceSec() {
           What We Do.</h1></div>
           <div className="text-center"><span className="md:text-3xl font-medium text-xl">You bring the ideas, we’ll bring them to life.</span></div>
         </div>
-        <div className="space-y-5">
-          <div className="md:flex space-y-5 gap-5 items-center">
-            <h2 className="md:text-4xl/[22px] font-semibold text-2xl/[24px]">
+        <div className="space-y-5 md:mt-16">
+          <div className="md:flex md:space-y-0 space-y-5 gap-5 items-center">
+            <h2 className="md:text-4xl/[26px] align-middle font-semibold text-2xl/[24px]">
               Social Media Graphics
             </h2>
             <button
               type="button"
               title="let's deal"
-              className="flex gap-2 mt-2 pt-[2px] h-8 px-5 group border-2 font-bold text-[#00b1dc] border-[#00b1dc] uppercase rounded-full"
+              className="flex gap-2 pt-[2px] h-8 px-4 group border-2 font-bold text-[#00b1dc] border-[#00b1dc] uppercase rounded-full"
             >
               Let's Talk Details{" "}
               <span>
