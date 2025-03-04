@@ -9,27 +9,35 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ServiceSec() {
   return (
     <section className="lg:px-16  md:px-10 py-16 px-5">
       <div className="lg:max-w-[1440px] space-y-10 m-0 md:m-auto">
         <div className="space-y-4">
-          <div className="flex justify-center"><h1 className="md:text-6xl text-3xl font-bold text-center uppercase md:w-[495px] w-[250px]">Designing Is
-          What We Do.</h1></div>
-          <div className="text-center"><span className="md:text-3xl font-medium text-xl">You bring the ideas, we’ll bring them to life.</span></div>
+          <div className="flex justify-center">
+            <h1 className="md:text-6xl text-3xl font-bold text-center uppercase md:w-[495px] w-[250px]">
+              Designing Is What We Do.
+            </h1>
+          </div>
+          <div className="text-center">
+            <span className="md:text-3xl font-medium text-xl">
+              You bring the ideas, we’ll bring them to life.
+            </span>
+          </div>
         </div>
         <div className="space-y-5 md:mt-16">
           <div className="md:flex md:space-y-0 space-y-5 gap-5 items-center">
-            <h2 className="md:text-4xl/[26px] align-middle font-semibold text-2xl/[24px]">
+            <h2 className="md:text-4xl align-middle font-semibold text-2xl/[24px]">
               Social Media Graphics
             </h2>
             <button
               type="button"
               title="let's deal"
-              className="flex gap-2 pt-[2px] h-8 px-4 group border-2 font-bold text-[#00b1dc] border-[#00b1dc] uppercase rounded-full"
+              className="flex gap-2 py-1 px-4 group border-2 font-bold text-[#00b1dc] border-[#00b1dc] uppercase rounded-full"
             >
-              Let's Talk Details{" "}
+              Let's Talk Details
               <span>
                 <MoveRight
                   className=" transition duration-200 group-hover:translate-x-1"
@@ -138,8 +146,12 @@ export default function ServiceSec() {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="absolute md:left-3 left-1 md:p-6 bg-white/60" />
-            <CarouselNext className="absolute md:right-3 right-1 md:p-6 bg-white/60" />
+            <CarouselPrevious className="absolute md:left-3 left-1 md:p-6 bg-white/60">
+              <ChevronLeft className="lg:!w-10 md:!w-6 lg:!h-10 md:!h-6 !w-4 !h-4" />
+            </CarouselPrevious>
+            <CarouselNext className="absolute md:right-3 right-1 md:p-6 bg-white/60">
+              <ChevronRight className="lg:!w-10 md:!w-6 lg:!h-10 md:!h-6 !w-4 !h-4" />
+            </CarouselNext>
           </Carousel>
         </div>
       </div>
