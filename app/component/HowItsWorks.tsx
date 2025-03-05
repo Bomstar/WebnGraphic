@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import Button from "./Button";
 
 export default function HowItsWorks() {
   return (
@@ -17,18 +17,7 @@ export default function HowItsWorks() {
               creative subscription plans and designers who can execute on your
               creative vision, with a fraction of the hassle.
             </p>
-            <button
-              className="bg-[#00b1dc] flex gap-3 group font-bold text-xl text-red-50 p-3 pr-6 pl-6 rounded-full mt-8"
-              href="#"
-            >
-              SEE PLAINS
-              <span>
-                <MoveRight
-                  className=" transition duration-200 group-hover:translate-x-1"
-                  strokeWidth={2.25}
-                />
-              </span>
-            </button>
+            <Button>See plans</Button>
           </div>
           <div className="lg:space-y-16 md:space-y-10 space-y-8 md:w-[50%]">
             <div className="md:flex space-y-4 md:gap-8">
