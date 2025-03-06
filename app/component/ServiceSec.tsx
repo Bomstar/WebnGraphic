@@ -47,7 +47,7 @@ export default function ServiceSec() {
             </button>
           </div>
           <div>
-            <p className="text-lg/[22px] lg:w-[70%] md:w-[90%]">
+            <p className="text-lg/[22px] text-gray-600 lg:w-[70%] md:w-[90%]">
               Engaging designs are a must for every platform in order to grab
               the attention of your target audience. Get custom branded,
               innovative, and platform-ready designs and templates, from static

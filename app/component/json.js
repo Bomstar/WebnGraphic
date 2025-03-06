@@ -5,7 +5,6 @@ export const PricingPlans = [
     title: "Starter",
     discountPrice: "$45",
     regularPrice: "68",
-    deuTime: "Per mounth",
     check: (
       <Check
         size={32}
@@ -24,7 +23,6 @@ export const PricingPlans = [
     title: "Professional",
     discountPrice: "$99",
     regularPrice: "139",
-    deuTime: "Per mounth",
     popularTag: true,
     check: (
       <Check
@@ -45,7 +43,6 @@ export const PricingPlans = [
     title: "Exclusive",
     discountPrice: "$299",
     regularPrice: "399",
-    deuTime: "Per mounth",
     check: (
       <Check
         size={32}
@@ -61,5 +58,85 @@ export const PricingPlans = [
       "VIP priority support",
       "Super-fast delivery (2-3 days)",
     ],
+  },
+];
+
+// Web Design Services
+
+export const webServices = [
+  {
+    icon: "/icons/responsive-design.png",
+    title: "Responsive Design",
+    description:
+      "We create fully responsive websites that work seamlessly on desktops, tablets, and mobile devices. Our designs adapt to different screen sizes, ensuring a consistent user experience and better engagement. A responsive site improves accessibility and helps retain visitors longer.",
+  },
+  {
+    icon: "/icons/ui-ux.png",
+    title: "UI/UX Optimization",
+    description:
+      "Our UI/UX experts design intuitive and visually appealing interfaces that enhance user interaction. We focus on usability, aesthetics, and functionality to create an immersive experience that aligns with your brand identity and business goals.",
+  },
+  {
+    icon: "/icons/seo.png",
+    title: "SEO-Friendly Development",
+    description:
+      "Our web design services include SEO optimization to improve search engine rankings. We implement best practices such as fast loading speeds, structured content, and mobile-friendliness, helping your site attract more organic traffic and visibility.",
+  },
+  {
+    icon: "/icons/ecommerce.png",
+    title: "E-Commerce Solutions",
+    description:
+      "We specialize in crafting high-performance e-commerce websites with seamless navigation and engaging product displays. Our e-commerce solutions ensure smooth checkout processes and secure payment gateways to enhance customer satisfaction and sales.",
+  },
+  {
+    icon: "/icons/speed-optimization.png",
+    title: "Performance Optimization",
+    description:
+      "Ensuring fast-loading websites with optimized assets, caching strategies, and minimal downtime for an exceptional user experience.",
+  },
+  {
+    icon: "/icons/custom-dev.png",
+    title: "Custom Web Development",
+    description:
+      "We build custom websites tailored to your unique needs. Whether you need a portfolio, business site, or web application, we develop solutions with scalability, flexibility, and performance in mind, ensuring long-term success.",
+  },
+];
+
+export const logoServices = [
+  {
+    img: "/icons/custom-logo.png",
+    title: "Custom Logo Design",
+    description:
+      "Get a unique and creative logo tailored specifically for your brand. Our expert designers ensure that your logo represents your brand identity effectively and stands out from the competition.",
+  },
+  {
+    img: "/icons/branding.png",
+    title: "Brand Identity Design",
+    description:
+      "We create complete brand identity packages, including logos, color schemes, and typography, ensuring a cohesive and professional look for your business across all platforms.",
+  },
+  {
+    img: "/icons/modern-logo.png",
+    title: "Modern & Minimalist Logos",
+    description:
+      "If you prefer a sleek and contemporary design, our minimalist logos convey your message effectively while maintaining simplicity and elegance in their visual appeal.",
+  },
+  {
+    img: "/icons/mascot.png",
+    title: "Mascot & Illustration Logos",
+    description:
+      "Bring your brand to life with custom mascot and illustration logos that add personality and uniqueness, making your business instantly recognizable.",
+  },
+  {
+    img: "/icons/vector.png",
+    title: "Vector & Scalable Logos",
+    description:
+      "Our high-quality vector logos are designed to be scalable without losing clarity, ensuring your brand looks great on all mediums, from business cards to billboards.",
+  },
+  {
+    img: "/icons/3d-logo.png",
+    title: "3D & Animated Logos",
+    description:
+      "Enhance your brand presence with dynamic 3D and animated logos that grab attention and create a strong visual impact for digital and video content.",
   },
 ];
