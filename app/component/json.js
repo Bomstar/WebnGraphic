@@ -104,37 +104,37 @@ export const webServices = [
 
 export const logoServices = [
   {
-    img: "/icons/custom-logo.png",
+    icon: "/icons/custom-logo.png",
     title: "Custom Logo Design",
     description:
-      "Get a unique and creative logo tailored specifically for your brand. Our expert designers ensure that your logo represents your brand identity effectively and stands out from the competition.",
+      "Get a unique and creative logo tailoreda specifically for your brand. Our expert designers ensure that your logo represents your brand identity effectively and stands out from the competition.",
   },
   {
-    img: "/icons/branding.png",
+    icon: "/icons/branding.png",
     title: "Brand Identity Design",
     description:
       "We create complete brand identity packages, including logos, color schemes, and typography, ensuring a cohesive and professional look for your business across all platforms.",
   },
   {
-    img: "/icons/modern-logo.png",
+    icon: "/icons/modern-logo.png",
     title: "Modern & Minimalist Logos",
     description:
       "If you prefer a sleek and contemporary design, our minimalist logos convey your message effectively while maintaining simplicity and elegance in their visual appeal.",
   },
   {
-    img: "/icons/mascot.png",
+    icon: "/icons/mascot.png",
     title: "Mascot & Illustration Logos",
     description:
       "Bring your brand to life with custom mascot and illustration logos that add personality and uniqueness, making your business instantly recognizable.",
   },
   {
-    img: "/icons/vector.png",
+    icon: "/icons/vector.png",
     title: "Vector & Scalable Logos",
     description:
       "Our high-quality vector logos are designed to be scalable without losing clarity, ensuring your brand looks great on all mediums, from business cards to billboards.",
   },
   {
-    img: "/icons/3d-logo.png",
+    icon: "/icons/3d-logo.png",
     title: "3D & Animated Logos",
     description:
       "Enhance your brand presence with dynamic 3D and animated logos that grab attention and create a strong visual impact for digital and video content.",
