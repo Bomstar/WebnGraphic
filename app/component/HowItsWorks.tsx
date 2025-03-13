@@ -2,8 +2,8 @@ import Button from "./Button";
 
 export default function HowItsWorks() {
   return (
-    <div>
-      <section className="bg-[#ededed] text-[#282b30] lg:px-16 md:px-10 px-5 py-16">
+    <div className="">
+      <section className="z-100 bg-[#ededed] text-[#282b30] lg:px-16 md:px-10 px-5 py-16">
         <div className="md:flex lg:gap-20 md:gap-10 lg:max-w-[1440px] m-0 md:m-auto">
           <div className="md:w-[50%] mb-8">
             <h3 className="text-[#00b1dc] uppercase md:text-base">

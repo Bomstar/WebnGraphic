@@ -140,3 +140,22 @@ export const logoServices = [
       "Enhance your brand presence with dynamic 3D and animated logos that grab attention and create a strong visual impact for digital and video content.",
   },
 ];
+
+export const WorkItems = [
+  {
+    num: "01.",
+    names: "Make An Appointment",
+  },
+  {
+    num: "02.",
+    names: "Meet Our Team",
+  },
+  {
+    num: "03.",
+    names: "Get Consultation",
+  },
+  {
+    num: "04.",
+    names: "Start Project",
+  },
+];

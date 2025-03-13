@@ -11,7 +11,7 @@ import {
 
 export default function Pricing() {
   return (
-    <div className="bg-gray-100 p-16">
+    <div className="bg-gray-100 md:p-16 p-5">
       <div className="lg:max-w-[1440px] space-y-10 m-0 md:m-auto">
         <h1 className="text-4xl text-center font-bold">Our Pricing Plans</h1>
         <div className="flex flex-wrap justify-center gap-6">

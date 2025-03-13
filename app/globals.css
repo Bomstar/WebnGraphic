@@ -1,5 +1,66 @@
 @import "tailwindcss";
 
+.buble-blue-left {
+  background-color: #fc1c69;
+  border-radius: 0 350px 350px 0;
+  bottom: 0;
+  filter: blur(80px);
+  height: 300px;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  top: 300px;
+  width: 150px;
+  z-index: 1;
+}
+
+.buble-blue,
+.buble-red {
+  filter: blur(80px);
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.buble-blue {
+  background-image: linear-gradient(45deg, #52d9d999, #352d66);
+  border-radius: 50%;
+  height: 450px;
+  opacity: 0.6;
+  top: -160px;
+  width: 450px;
+}
+
+.buble-red {
+  background-color: #fc1c69;
+  border-radius: 150px 0 0 150px;
+  bottom: 0;
+  height: 300px;
+  opacity: 0.5;
+  top: 300px;
+  width: 150px;
+  z-index: 0;
+}
+
+.response-form-input {
+  background-color: transparent;
+  border: 0.5px solid #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+.bg-Ttext {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 177 220 / var(--tw-bg-opacity, 1));
+}
+
+.text-Ttext {
+  --tw-text-opacity: 1;
+  color: rgb(0 177 220 / var(--tw-text-opacity, 1));
+}
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -28,7 +89,6 @@ body {
 } */
 
 :root {
-
   --background: oklch(1 0 0);
 
   --foreground: oklch(0.145 0 0);
@@ -97,7 +157,6 @@ body {
 }
 
 .dark {
-
   --background: oklch(0.145 0 0);
 
   --foreground: oklch(0.985 0 0);
@@ -164,7 +223,6 @@ body {
 }
 
 @theme inline {
-
   --color-background: var(--background);
 
   --color-foreground: var(--foreground);
