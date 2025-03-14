@@ -8,10 +8,12 @@ import LogoDesignServices from "./component/LogoDesignServices";
 import HeroTheme from "./component/Hero-theme";
 import Test from "./component/test";
 import Work from "./component/Work";
+import SignUp from "./component/SignUp";
 
 export default function Home() {
   return (
     <div>
+      <SignUp />
       <HeroTheme></HeroTheme>
       <HowItsWorks />
       <Work />

@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+.clip-path-custom::before {
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+}
+
+.beforeForm:hover .clip-path-custom::before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
+}
+
 .buble-blue-left {
   background-color: #fc1c69;
   border-radius: 0 350px 350px 0;
