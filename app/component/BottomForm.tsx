@@ -1,7 +1,21 @@
+"use client";
 import Image from "next/image";
 import { MessageCircleMore } from "lucide-react";
+import { Listbox } from "@headlessui/react";
+import { useState } from "react";
+
+const services = [
+  { name: "--Select Service--", value: "select-service" },
+  { name: "Web Development", value: "web-development" },
+  { name: "Web Design", value: "web-design" },
+  { name: "Graphic Design", value: "graphic-design" },
+  { name: "Digital Marketing", value: "digital-marketing" },
+  { name: "Video Production", value: "video-production" },
+  { name: "App Development", value: "app-development" },
+];
 
 export default function BottomForm() {
+  const [selectedService, setSelectedService] = useState(services[0]);
   return (
     <section className="section-background">
       <div className="md:flex lg:p-16 md:p-10 p-5 max-sm:space-y-5 gap-10 text-white">
@@ -31,32 +45,58 @@ export default function BottomForm() {
 
         <div className="lg:w-[70%] md:3/5">
           <form action="" className="w-full md:space-y-10 space-y-5 relative">
-            <input
-              type="text"
-              placeholder="Enter Name"
-              className="bg-white w-full rounded-full text-black p-4"
-              required
-            />
             <div className="md:flex lg:gap-10 max-sm:space-y-5 gap-3">
               <input
                 type="text"
-                placeholder="Enter Email"
-                className="bg-white md:w-1/2 w-full rounded-full text-black p-4"
+                placeholder="Enter Name"
+                className="bg-white md:w-1/2 w-full rounded-full focus:ring-2 focus:ring-[#00b1dc] focus:outline-none text-black md:p-4 p-2"
                 required
               />
               <input
                 type="text"
-                placeholder="Phone"
-                className="bg-white md:w-1/2 w-full rounded-full text-black p-4"
+                placeholder="Enter Email"
+                className="bg-white md:w-1/2 w-full rounded-full focus:ring-2 focus:ring-[#00b1dc] focus:outline-none text-black md:p-4 p-2"
                 required
               />
             </div>
+
+            <div className="md:flex lg:gap-10 max-sm:space-y-5 gap-3">
+              <input
+                type="text"
+                placeholder="Phone"
+                className="bg-white md:w-1/2 w-full focus:ring-2 focus:ring-[#00b1dc] focus:outline-none rounded-full text-black md:p-4 p-2"
+                required
+              />
+              <Listbox value={selectedService} onChange={setSelectedService}>
+                <div className="relative md:w-1/2 w-full z-10">
+                  <Listbox.Button className="w-full md:p-4 p-2 border rounded-full bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    {selectedService.name}
+                  </Listbox.Button>
+                  <Listbox.Options className="absolute w-full mt-1 overflow-hidden bg-white border rounded-lg shadow-lg">
+                    {services.map((service, i) => (
+                      <Listbox.Option
+                        key={i}
+                        value={service}
+                        className={({ active }) =>
+                          `cursor-pointer p-2 ${
+                            active ? "bg-[#00b1dc] text-white" : "text-gray-700"
+                          }`
+                        }
+                      >
+                        {service.name}
+                      </Listbox.Option>
+                    ))}
+                  </Listbox.Options>
+                </div>
+              </Listbox>
+            </div>
+
             <textarea
               name="messege"
               placeholder="Messege"
               cols={40}
               rows={10}
-              className=" bg-white h-40 w-full rounded-3xl text-black p-4"
+              className=" bg-white h-40 w-full rounded-3xl focus:ring-2 focus:ring-[#00b1dc] focus:outline-none text-black p-4"
               required
             ></textarea>
             <button
