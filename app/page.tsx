@@ -11,6 +11,7 @@ import Work from "./component/Work";
 import SignUp from "./component/SignUp";
 import AboutUs from "./component/AboutUs";
 import AboutUs2 from "./component/AboutUs2";
+import BottomForm from "./component/BottomForm";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <WebDesignServices />
       <LogoDesignServices />
       <AboutUs2></AboutUs2>
+      <BottomForm></BottomForm>
       <Test />
     </div>
   );
