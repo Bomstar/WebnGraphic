@@ -7,7 +7,7 @@ interface ButtonProps {
 
 export default function GlobalButton({ children }: ButtonProps) {
   return (
-    <button className="bg-[#00b1dc] cursor-pointer flex justify-center gap-3 group uppercase font-bold text-xl text-red-50 p-2 pr-6 pl-6 hover:bg-[#0098c1] rounded-full">
+    <button className="bg-[#00b1dc] cursor-pointer flex justify-center gap-3 group uppercase font-bold md:text-xl text-lg text-red-50 p-2 pr-6 pl-6 hover:bg-[#0098c1] rounded-full">
       {children}
       <span>
         <MoveRight

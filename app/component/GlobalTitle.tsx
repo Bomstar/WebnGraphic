@@ -5,5 +5,5 @@ interface GlobalTitleProps {
 }
 
 export default function GlobalTitle({ children }: GlobalTitleProps) {
-  return <h2 className="text-4xl font-bold text-center">{children}</h2>;
+  return <h2 className="text-4xl font-bold">{children}</h2>;
 }
