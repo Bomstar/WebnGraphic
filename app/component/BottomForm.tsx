@@ -69,7 +69,7 @@ export default function BottomForm() {
               />
               <Listbox value={selectedService} onChange={setSelectedService}>
                 <div className="relative md:w-1/2 w-full z-10">
-                  <Listbox.Button className="w-full md:p-4 p-2 border rounded-full bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                  <Listbox.Button className="w-full md:p-4 p-2 text-left border rounded-full bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                     {selectedService.name}
                   </Listbox.Button>
                   <Listbox.Options className="absolute w-full mt-1 overflow-hidden bg-white border rounded-lg shadow-lg">
@@ -101,7 +101,7 @@ export default function BottomForm() {
             ></textarea>
             <button
               title="Massege Button"
-              className="flex absolute right-4 md:bottom-16 bottom-10 justify-center items-center lg:px-5 px-4 lg:py-3.5 py-2 rounded-full bg-linear-90 from-[#0072ff] to-[#00d4ff]"
+              className="flex absolute cursor-pointer right-4 md:bottom-16 bottom-10 justify-center items-center lg:px-5 px-4 lg:py-3.5 py-2 rounded-full bg-linear-90 from-[#0072ff] to-[#00d4ff]"
             >
               SEND{" "}
               <span>

@@ -12,6 +12,8 @@ import SignUp from "./component/SignUp";
 import AboutUs from "./component/AboutUs";
 import AboutUs2 from "./component/AboutUs2";
 import BottomForm from "./component/BottomForm";
+import BlogClassic from "./component/blog";
+import WorkProcess from "./component/Work-process";
 
 export default function Home() {
   return (
@@ -20,11 +22,13 @@ export default function Home() {
       <HeroTheme></HeroTheme>
       <AboutUs></AboutUs>
       <HowItsWorks />
+      <WorkProcess></WorkProcess>
       <Work />
       <ServiceSec />
       <PricingPlan />
       <WebDesignServices />
       <LogoDesignServices />
+      <BlogClassic></BlogClassic>
       <AboutUs2></AboutUs2>
       <BottomForm></BottomForm>
       <Test />
