@@ -14,6 +14,8 @@ import AboutUs2 from "./component/AboutUs2";
 import BottomForm from "./component/BottomForm";
 import BlogClassic from "./component/blog";
 import WorkProcess from "./component/Work-process";
+import TechnologySubjects from "./component/technology-subjects";
+import HomeBlog from "./component/HomeBlog";
 
 export default function Home() {
   return (
@@ -27,11 +29,13 @@ export default function Home() {
       <ServiceSec />
       <PricingPlan />
       <WebDesignServices />
+      <TechnologySubjects></TechnologySubjects>
       <LogoDesignServices />
       <BlogClassic></BlogClassic>
       <AboutUs2></AboutUs2>
       <BottomForm></BottomForm>
       <Test />
+      <HomeBlog></HomeBlog>
     </div>
   );
 }

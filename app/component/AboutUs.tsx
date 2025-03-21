@@ -8,7 +8,7 @@ export default function AboutUs() {
         Our Legacy
       </h2>
       <div className="flex max-lg:flex-col md:items-center max-lg:space-y-7 max-sm:space-y-5 gap-10">
-        <div className="lg:w-1/2 md:w-4/5 flex justify-center xl:[568px] lg:h-[458px] md:h-[568px] h-80 [mask-image:url('/assets/mask.png')] [mask-size:100%_100%;] [mask-repeat: no-repeat,]  relative group overflow-hidden border rounded-2xl">
+        <div className="lg:w-1/2 md:w-4/5 flex justify-center xl:[568px] lg:h-[458px] md:h-[568px] h-80 [mask-image:url('/assets/mask.png')] image-anime [mask-size:100%_100%;] [mask-repeat: no-repeat,]  relative group overflow-hidden border rounded-2xl">
           <Image
             src="/assets/Ourlegacy.png" // Local image (stored in public/)
             alt="Example Image"
