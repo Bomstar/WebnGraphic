@@ -58,8 +58,8 @@ const Icons = [
 
 export default function HomeBlog() {
   return (
-    <section className="flex items-center p-16 gap-10">
-      <div className="w-3/6 space-y-8">
+    <section className="flex p-16 gap-10">
+      <div className="w-[45%] space-y-8">
         <h4 className="font-semibold uppercase mb-0 text-[#00b1dc]">
           Blog Post
         </h4>
@@ -74,38 +74,39 @@ export default function HomeBlog() {
           </button>
         </div>
       </div>
-      <div className="w-2/5 space-y-7 group relative">
+      <div className="w-[48%] space-y-5 group relative">
         {HomeBlogLists.map((list, i) => (
           <div
             key={i}
             className={`flex relative transform duration-300 bg-white ${
               i === 0
-                ? "top-4  hover:scale-105"
+                ? "hover:scale-105"
                 : i === 1
                 ? "left-12  group-hover:left-0 z-10 hover:scale-105"
-                : "bottom-4 hover:scale-105"
-            } gap-5 p-6 shadow-[0_2px_60px] shadow-gray-300 rounded-2xl`}
+                : "hover:scale-105"
+            } gap-3 p-4 shadow-[0_2px_60px] shadow-gray-300 rounded-lg`}
           >
-            <div className="w-2/5 h-[150px] image-anime relative group overflow-hidden  rounded-2xl">
+            <div className="aspect-video w-52 image-anime relative group overflow-hidden  rounded-md">
               <Image
                 src={list.blogImage} //outb Local image (stored in public/)
                 alt={list.title}
-                fill
+                width={1280}
+                height={720}
                 className="group-hover:scale-105 object-cover duration-300"
               />
             </div>
             <div className="w-3/5 space-y-5">
-              <ul className="flex gap-x-8 gap-y-2 flex-wrap text-[12px]">
+              <ul className="flex gap-x-3 gap-y-2 flex-wrap text-[12px]">
                 {Icons.map((icon, idx) => (
                   <li key={idx} className="flex  items-center gap-1">
                     <i className="text-[#00b1dc]">{icon}</i>
-                    <span className="uppercase">
+                    <a className="uppercase cursor-pointer hover:text-[#00b1dc]">
                       {icon.key === "icon1"
                         ? list.author
                         : icon.key === "icon2"
                         ? list.dudate
                         : list.tagsName}
-                    </span>
+                    </a>
                   </li>
                 ))}
               </ul>

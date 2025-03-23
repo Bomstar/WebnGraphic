@@ -159,11 +159,12 @@ export default function BlogPost() {
           <div className="w-full lg:w-2/3">
             <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-8">
               {/* Featured Image */}
-              <div className="relative h-[400px] w-full">
+              <div className="relative aspect-video w-full">
                 <Image
                   src={blogData.image || "/placeholder.svg"}
                   alt={blogData.title}
-                  fill
+                  width={1280}
+                  height={720}
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 800px"
                   priority

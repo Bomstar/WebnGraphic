@@ -114,6 +114,46 @@
   background-color: transparent;
 }
 
+.after-anime::after {
+  content: " ";
+  width: 95%;
+  height: 95%;
+  z-index: -1;
+  position: absolute;
+  top: auto;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 12px;
+  background-image: linear-gradient(100deg, #00cadc, #00b1dc);
+  background-repeat: repeat-x;
+  outline: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.after-anime:hover:after {
+  transform: rotate(2deg) translateX(-5px) translateY(16px);
+}
+
+.deshline::after,
+.deshline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #00b1dc;
+}
+
+.deshline::after {
+  width: 30px;
+  top: -8px;
+  height: 2px;
+}
+
+.deshline::before {
+  width: 50px;
+  top: -5px;
+  height: 3px;
+}
+
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
