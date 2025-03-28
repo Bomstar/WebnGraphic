@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import ServicePage from "@/app/webDevolopment/commponent/IndServicePage";
 import FeaturesSection from "../commponent/features";
+import EcommerceSection from "../commponent/ecommerce-solotion";
+import HeroSection from "../commponent/HeroSection";
 
 const services = [
   {
@@ -134,6 +136,8 @@ const headerData = {
 export default function EcommerceServicePage() {
   return (
     <main>
+      <HeroSection headerData={headerData}></HeroSection>
+      <EcommerceSection></EcommerceSection>
       <ServicePage
         pricingPlans={pricingPlans}
         services={services}

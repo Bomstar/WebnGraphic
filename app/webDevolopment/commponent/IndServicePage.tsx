@@ -1,7 +1,8 @@
 "use client"; // Mark this as a client component
 
+import { JSX } from "react";
 import Link from "next/link";
-import { Check, Home } from "lucide-react";
+import { Check } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -13,36 +14,47 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-export default function ServicePage({ pricingPlans, services, headerData }) {
+interface HeaderData {
+  title: string;
+  discription: string;
+}
+
+interface Service {
+  id: number;
+  title: string;
+  description: string;
+  icon: JSX.Element;
+}
+
+interface PricingPlan {
+  id: number;
+  title: string;
+  description: string;
+  price: string;
+  features: string[];
+  buttonText: string;
+  buttonLink: string;
+  popular?: boolean;
+}
+
+interface ServicePageProps {
+  headerData: HeaderData;
+  services: Service[];
+  pricingPlans: PricingPlan[];
+}
+
+export default function ServicePage({
+  pricingPlans,
+  services,
+  headerData,
+}: ServicePageProps) {
   return (
     <>
-      {/* Hero Section */}
-
-      <section className="py-16 bg-gradient-to-r from-[#16152f] to-[#34325b] text-white text-center relative">
-        <h1 className="text-4xl md:text-5xl font-bold  mb-4">
-          {headerData.title}
-        </h1>
-        <div className="flex items-center justify-center text-sm">
-          <Link
-            href="/"
-            className="text-white hover:text-[#00b1dc] flex items-center"
-          >
-            <Home className="h-4 w-4 mr-1" /> Home
-          </Link>
-          <span className="mx-2 text-gray-400">/</span>
-          <span className="text-[#00b1dc]">{headerData.title}</span>
-        </div>
-        <p className="text-lg md:text-xl mt-5 max-w-3xl mx-auto mb-8">
-          {headerData.discription}
-        </p>
-        <div className="w-16 h-1 mt-7 bg-[#00b1dc] mx-auto"></div>
-      </section>
-
       {/* Service Details Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            {headerData.boxTitle}
+            {headerData.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {/* Map through the services array and render each service */}
