@@ -17,6 +17,8 @@ import WorkProcess from "./component/Work-process";
 import TechnologySubjects from "./component/technology-subjects";
 import HomeBlog from "./component/HomeBlog";
 import Calendars from "./component/Calenders";
+import TestimonialsSlider from "./component/Testimonials";
+import ShadcnTestimonialsSlider from "./component/Testimonial2";
 
 export default function Home() {
   return (
@@ -37,6 +39,8 @@ export default function Home() {
       <BottomForm></BottomForm>
       <Test />
       <Calendars></Calendars>
+      <TestimonialsSlider></TestimonialsSlider>
+      <ShadcnTestimonialsSlider></ShadcnTestimonialsSlider>
       <HomeBlog></HomeBlog>
     </div>
   );
